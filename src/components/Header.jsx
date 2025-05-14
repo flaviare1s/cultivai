@@ -24,8 +24,8 @@ export const Header = () => {
     <>
       <header className="w-full bg-white shadow-md px-6 py-4 flex justify-between items-center z-50">
         <div className="flex items-center gap-2">
-          <img src={logo} alt="Logo CultivAI" className="h-10 w-auto" />
-          <h1 className="text-verde-primario text-xl font-bold">
+          <img src={logo} alt="Logo CultivAI" className="h-14 w-auto" />
+          <h1 className="text-verde-primario text-2xl font-bold">
             Cultiv<span className="text-azul-primario">AI</span>
           </h1>
         </div>

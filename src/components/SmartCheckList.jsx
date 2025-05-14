@@ -10,11 +10,13 @@ export const SmartChecklist = ({ checklist, onRemove }) => {
         {checklist.map((item, index) => (
           <li key={index} className="flex items-center justify-between">
             <label className="flex items-center gap-2">
-              <input type="checkbox" className="accent-azul3" />
-              {item}
+              <input type="checkbox" className="accent-azul2 peer" />
+              <span className="peer-checked:line-through peer-checked:text-gray-400">
+                {item}
+              </span>
             </label>
             <button onClick={() => onRemove(index)}>
-              <Trash2 className="text-red-500 w-5 h-5" />
+              <Trash2 className="text-laranja-terroso w-5 h-5 ml-3 cursor-pointer" />
             </button>
           </li>
         ))}
